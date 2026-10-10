@@ -1,15 +1,17 @@
-
-1. Problem Statement
+1.TITLE: 
+  Library Book Management Using Singly Linked List
+  
+2. Problem Statement
 Develop a Library Book Management System using a singly linked list to maintain library book records. The system should allow the user to insert new book records, search for a particular book, and display all available books.
 
-2. Objective
+3. Objective
 To implement a singly linked list in C++.
 To store library book records dynamically.
 To insert new books into the list.
 To search for a book using its ID.
 To display all available books.
 
-3. Algorithm
+4. Algorithm
 Step 1: Start.
 Step 2: Create a node containing Book ID, Book Name and Author Name.
 Step 3: Insert the book node into the singly linked list.
@@ -19,7 +21,7 @@ Step 6: If the ID matches, display the book details; otherwise display "Book not
 Step 7: Traverse the list and display all book records.
 Step 8: Stop.
 
-Flowchart
+5.Flowchart
 
              ┌─────────────┐ 
              │    START    │ 
@@ -57,7 +59,7 @@ Flowchart
               │    STOP   │ 
               └───────────┘
 
-C++ Program
+6.C++ Program
 
  #include <iostream>
 #include <string>
@@ -215,7 +217,7 @@ int main()
     return 0;
 }
 
-Output
+7.Output
 
 ===== LIBRARY BOOK MANAGEMENT =====
 1. Insert Book
