@@ -13,11 +13,15 @@ First Violation: Display the first position where the completeness property is v
 Multiple Test Cases: Test trees with missing nodes at different levels.
 Output: Display whether each tree is complete or incomplete and report the first violating position when applicable.
 
-## Analysis
-Time Complexity: O(n) per test case, where n is the number of positions examined.
-Space Complexity: O(n) when a queue or array is used to store the tree positions.
-Advantages: Identifies the first violation, supports multiple test cases, and makes it easier to compare different tree structures.
-Improvement: Provides more detailed information than the original program by showing where the completeness property is violated.
+## Complexity Analysis
+
+The time and space complexity of the Modified Binary Tree Validation program depend on the number of nodes or positions examined during validation and the additional operations performed to identify the first violation.
+
+Time Complexity: The modified program uses level-order traversal to validate the binary tree and identify the first position that violates the completeness property. Each node or position is examined at most once during a test case. Therefore, the time complexity is O(n), where n represents the number of nodes or positions examined. If multiple test cases are provided, the complexity is O(n) per test case.
+
+Space Complexity: The space complexity is O(n) when an array or queue is used to store the tree nodes or positions. Additional memory may be required to store the input for each test case and track the first missing position.
+
+Overall Analysis: The Modified Binary Tree Validation program improves the original program by identifying the first position that violates the completeness property and supporting multiple test cases. It provides more detailed validation results and helps compare complete and incomplete binary trees. This approach improves the usefulness of the program while maintaining linear time complexity.
 
 ## Conclusion
 
