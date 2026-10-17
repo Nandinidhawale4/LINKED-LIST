@@ -6,9 +6,13 @@ Develop a Library Book Management System using a Singly Linked List to store and
 
 The system uses a Singly Linked List in which each node stores the Book ID, Book Name, Author Name, and a pointer to the next node. The program provides a menu-driven interface that allows users to insert new books, search for books using their IDs, display all book records, and delete specific books. The head pointer identifies the first node, and the last node points to NULL. The list grows or shrinks dynamically as books are added or removed.
 
-## Analysis
+##  Complexity Analysis
 
-The Singly Linked List provides an efficient way to manage book records because memory is allocated dynamically whenever a new node is created. Insertion at the beginning takes O(1) time, while searching and displaying books generally take O(n) time. Deletion takes O(n) time when the program must search for the book first. Unlike arrays, a linked list does not require shifting elements when records are inserted or deleted. However, it supports traversal only in the forward direction, and each node requires extra memory for a pointer.
+Time Complexity: Insertion at the beginning takes O(1) time because it requires updating only the head pointer. Searching takes O(n) time because each node may need to be checked sequentially to find the required book. Displaying all book records takes O(n) time because every node must be traversed. Deletion takes O(n) time in the worst case because the program may need to search for the book before removing it.
+
+Space Complexity: The space complexity is O(n), where n is the total number of books stored in the linked list. Each book requires a node containing its details and a pointer to the next node. The linked list also supports dynamic memory allocation, allowing book records to be added or removed as required.
+
+Overall Analysis: A Singly Linked List provides efficient insertion at the beginning and flexible memory management. However, searching, displaying, and deleting records may take linear time because the nodes are accessed sequentially.
 
 ## Conclusion
 
