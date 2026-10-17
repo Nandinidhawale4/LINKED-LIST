@@ -15,13 +15,12 @@ Circular Connection: Connect the last node to the first node and the first node 
 
 A menu-driven program allows users to perform these operations.
 
-## Analysis
-Insertion: Takes O(1) time when inserting at the end using the circular links.
-Searching: Takes O(n) time because each node may need to be checked.
-Displaying: Takes O(n) time to display all book records.
-Deletion: Takes O(n) time when searching for a book by its ID.
-Advantages: Supports forward and backward traversal, allows dynamic memory allocation, and does not require shifting elements.
-Limitation: Requires extra memory for two pointers in each node and careful pointer management.
+##  Complexity Analysis
+time Complexity: Insertion at the end takes O(1) time when the last node can be accessed directly through head->prev. Searching takes O(n) time because each node may need to be checked sequentially to find the required book. Displaying all book records in either forward or backward direction takes O(n) time because every node must be traversed. Deletion takes O(n) time in the worst case because the program may need to search for the book before removing it. Once the node is found, deleting it takes O(1) time by updating its previous and next pointers.
+
+Space Complexity: The space complexity is O(n), where n is the total number of books stored in the list. Each node contains book details and two pointers, prev and next, which connect it to the previous and next nodes. The circular connections allow traversal in both directions without requiring additional memory for a separate traversal structure.
+
+Overall Analysis: The Doubly Circular Linked List provides dynamic memory allocation, efficient insertion and deletion after locating a node, and forward and backward traversal. However, searching and displaying book records require linear time. Compared with a Singly Linked List, it provides bidirectional traversal but requires additional memory for the previous pointer.
 
 ## Conclusion
 
