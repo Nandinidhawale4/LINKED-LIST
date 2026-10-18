@@ -1,12 +1,11 @@
 ## Objectives
 
-To understand the concept and properties of a complete binary tree.
+To understand the concept of a complete binary tree.
 
-To implement a binary tree using linked representation in C++.
+To implement a program for validating a complete binary tree.
 
-To check whether a given binary tree is complete or incomplete.
+To identify the first position that violates completeness.
 
-To identify missing child positions that violate the completeness property.
+To test trees with missing nodes at different levels.
 
-To understand the practical application of binary trees in data structures.
-
+To display the result clearly as complete or incomplete.
